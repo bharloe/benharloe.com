@@ -1,0 +1,1 @@
+aws s3 sync client/ s3://www.benharloe.com
