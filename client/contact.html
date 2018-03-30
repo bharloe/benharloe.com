@@ -28,7 +28,7 @@
 	<section id="header">
 		<div class="inner">
 			<span class="icon major fa-cloud"></span>
-			<h1>Use the form below to contact me or, if you prefer, feel
+			<h1 id="contactHeader">Use the form below to contact me or, if you prefer, feel
 				<br /> free to shoot me an email at ben.harloe@gmail.com</h1>
 		</div>
 	</section>
@@ -38,26 +38,26 @@
 		<div class="container">
 			<section>
 				<h4>Form</h4>
-				<form method="post" action="#">
+				<form>
 					<div class="row uniform 50%">
 						<div class="6u 12u$(xsmall)">
-							<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+							<input type="text" name="demo-name" id="name" value="" placeholder="Name" />
 						</div>
 						<div class="6u$ 12u$(xsmall)">
-							<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+							<input type="email" name="demo-email" id="email" value="" placeholder="Email" />
 						</div>
 						<div class="12u$">
 							<div class="select-wrapper">
-								<select name="demo-category" id="demo-category">
+								<select id="category">
 									<option value="">- Category -</option>
-									<option value="1">Manufacturing</option>
-									<option value="1">Shipping</option>
-									<option value="1">Administration</option>
-									<option value="1">Human Resources</option>
+									<option value="Cloud">Cloud Services</option>
+									<option value="Web">Web Development</option>
+									<option value="Serverless">Serverless</option>
+									<option value="Data">Data Pipelines</option>
 								</select>
 							</div>
 						</div>
-						<div class="4u 12u$(small)">
+						<!-- <div class="4u 12u$(small)">
 							<input type="radio" id="demo-priority-low" name="demo-priority" checked>
 							<label for="demo-priority-low">Low</label>
 						</div>
@@ -68,22 +68,22 @@
 						<div class="4u$ 12u$(small)">
 							<input type="radio" id="demo-priority-high" name="demo-priority">
 							<label for="demo-priority-high">High</label>
-						</div>
-						<div class="6u 12u$(small)">
+						</div> -->
+						<!-- <div class="6u 12u$(small)">
 							<input type="checkbox" id="demo-copy" name="demo-copy">
 							<label for="demo-copy">Email me a copy</label>
-						</div>
-						<div class="6u$ 12u$(small)">
+						</div> -->
+						<!-- <div class="6u$ 12u$(small)">
 							<input type="checkbox" id="demo-human" name="demo-human" checked>
 							<label for="demo-human">Not a robot</label>
-						</div>
+						</div> -->
 						<div class="12u$">
-							<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+							<textarea name="demo-message" id="message" placeholder="Enter your message" rows="6"></textarea>
 						</div>
 						<div class="12u$">
 							<ul class="actions">
 								<li>
-									<input type="submit" value="Send Message" class="special" />
+									<input type="submit" value="Send Message" class="special" id="contactSubmit" />
 								</li>
 								<li>
 									<input type="reset" value="Reset" />
@@ -95,7 +95,6 @@
 			</section>
 		</div>
 	</section>
-
 
 	<!-- Footer -->
 	<section id="footer">
@@ -133,6 +132,7 @@
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/scripts.js"></script>
 
 </body>
 
